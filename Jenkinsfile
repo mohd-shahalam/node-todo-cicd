@@ -20,7 +20,6 @@ pipeline {
                 echo 'image scanning ho gayi'
             }
         }
-    }
         stage("deploy"){
             steps{
                 sh "docker-compose down && docker-compose up -d"
